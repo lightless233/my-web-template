@@ -1,0 +1,10 @@
+root = "."
+tmp_dir = "./tmp/"
+
+[build]
+cmd = "go build -o ./tmp/__debug_bin cmd/web/main.go"
+bin = "/tmp/__debug_bin"
+args_bin = ["-c", "./config.toml"]
+
+[misc]
+clean_on_exit = true
